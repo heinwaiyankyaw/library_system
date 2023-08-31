@@ -16,7 +16,6 @@ export default function BookList() {
         <div className=" grid grid-cols-2 md:grid-cols-4 gap-4 my-3">
           {books.map((book) => (
             <Link to={`/books/${book.id}`} key={book.id}>
-              <small>{book.id}</small>
               <div className="p-4 border border-1 rounded">
                 <img src={Book} alt="" className="rounded" />
                 <div className=" text-center space-y-2 mt-3">
